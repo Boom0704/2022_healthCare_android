@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+
+    >
+
+    <LinearLayout
+        android:background="@color/btn"
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_baseline_directions_run_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/sportName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:text="Sport"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/sportDate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="gravity"
+                    android:gravity="right"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_gravity="right"
+                    android:text="생성 날짜"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/sportContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sport content"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnDelte"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/mainColor"
+                    android:text="삭제"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

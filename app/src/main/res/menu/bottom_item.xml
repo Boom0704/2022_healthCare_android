@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom1"
+        android:enabled="true"
+        android:title="홈"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/bottom2"
+        android:enabled="true"
+        android:title="운동"
+        android:icon="@drawable/ic_launcher_foreground"/>
+
+
+    <item
+        android:id="@+id/bottom3"
+        android:enabled="true"
+        android:title="랭킹"
+        android:icon="@drawable/ic_notifications_black_24dp"/>
+
+    <item
+        android:id="@+id/bottom4"
+        android:enabled="true"
+        android:title="마이페이지"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
+</menu>

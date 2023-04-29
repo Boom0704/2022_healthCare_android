@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+    android:orientation="vertical"
+    android:background="@color/mainColor">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="운동 추가 및 기록 하세요!"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="60dp"/>
+
+    <!--두 번째 레이아웃 슬라이딩으로 보일 레이아웃, 운동 추가 폼-->
+    <LinearLayout
+        android:id="@+id/page"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:background="@drawable/image_addsport"
+        android:visibility="gone">
+        <ImageView
+            android:src="@drawable/testimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="추가할 운동: "
+            android:textColor="#ff000000"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/addSport"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="예상 소모 칼로리: "
+                android:textColor="#ff000000"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/addSport2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_margin="10dp"
+            android:textColorHint="@color/btn"
+            android:id="@+id/addButton2"
+            android:text="운동추가"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+
+
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/addButton"
+        app:rippleColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@android:drawable/btn_star" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
